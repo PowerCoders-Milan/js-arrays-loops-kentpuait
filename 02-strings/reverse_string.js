@@ -1,14 +1,8 @@
-// read carefully the instructions
-const myString = 'HELLO'
-var splits = myString.split();
+const myString = 'Hello'
 
-let stringArray = ['H', 'E', 'L', 'L', 'O']
-console.log(splits);
+let stringArray = myString.split('');
+console.log(stringArray);
+stringArray.reverse();
+console.log(stringArray);
+console.log(stringArray.join(''));
 
-const reversed = stringArray.reverse();
-console.log('reversed:', reversed);
-
-console.log(stringArray.join());
-// "HELLO"
-
-console.log(myString)
