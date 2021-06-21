@@ -1,9 +1,13 @@
 // function declaration
 const nMultiplesOf = (number, limit) => {
-    let multiples = [2, 4, 6, 8, 10, 12, 14, 16, 18, 20];
-    for (i = 0; i < limit.length; i++);
-    //console.log(multiplesOf)
+    const multiples = [];
+    let i = 1;
+    while (multiples.length <= limit) {
+        if (i % number === 0) {
+            multiples.push(i)
+        }
+        i++;
+    }
     return multiples;
 }
-//while (i < 20);
-console.log(multiples());
+console.log(nMultiplesOf(2, 10));
