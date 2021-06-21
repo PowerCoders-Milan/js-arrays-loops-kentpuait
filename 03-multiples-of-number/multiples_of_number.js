@@ -1,12 +1,12 @@
 // define your function here
-const multiplesOf = (number, limit) =>{
-    for (i = 0; i<20; i++){
-      if (i%2 === 0){
-     console.log(i);
-     }
+const multiplesOf = (number, limit) => {
+  const multiples = [];
+  for (i = 0; i < limit; i++) {
+    if (i % number === 0) {
+      multiples.push(i);
     }
-   }
-    multiplesOf(2, 10); 
- const multiples = [];
- const multiplesOfNumber = multiplesOf(20);
-  console.log(multiplesOfNumber);
+  }
+return multiples
+}
+const multiplesOfTwo = multiplesOf(2, 40);
+console.log(multiplesOfTwo);
